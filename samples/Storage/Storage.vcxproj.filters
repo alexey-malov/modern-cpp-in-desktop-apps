@@ -13,57 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="storage">
+      <UniqueIdentifier>{e88b659a-456d-43ce-b8d1-1ee4f18b237b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SampleMVPApp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MainFrm.h">
+    <ClInclude Include="..\..\catch\catch.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ChildView.h">
+    <ClInclude Include="FileStorage.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FileEntity.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
+    <ClInclude Include="FileReference.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SignallingValue.h">
+    <ClInclude Include="FolderEntity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SampleMVPApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainFrm.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ChildView.cpp">
+    <ClCompile Include="FileStorage.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="FileEntity.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="FileReference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="SampleMVPApp.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\SampleMVPApp.rc2">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="res\SampleMVPApp.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <ClCompile Include="FolderEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

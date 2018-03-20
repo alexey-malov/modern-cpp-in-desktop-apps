@@ -4,22 +4,19 @@
 
 #include "stdafx.h"
 #include "SampleMVPApp.h"
-#include "afxwinappex.h"
-#include "afxdialogex.h"
 #include "MainFrm.h"
-
+#include "afxdialogex.h"
+#include "afxwinappex.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
-
 
 // SampleApp
 
 BEGIN_MESSAGE_MAP(SampleApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &SampleApp::OnAppAbout)
 END_MESSAGE_MAP()
-
 
 // SampleApp construction
 
@@ -37,7 +34,6 @@ SampleApp::SampleApp()
 
 SampleApp theApp;
 
-
 // SampleApp initialization
 
 BOOL SampleApp::InitInstance()
@@ -54,7 +50,6 @@ BOOL SampleApp::InitInstance()
 
 	CWinApp::InitInstance();
 
-
 	EnableTaskbarInteraction(FALSE);
 
 	// AfxInitRichEdit2() is required to use RichEdit control
@@ -69,7 +64,6 @@ BOOL SampleApp::InitInstance()
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 
-
 	// To create the main window, this code creates a new frame window
 	// object and then sets it as the application's main window object
 	MainFrame* pFrame = new MainFrame;
@@ -80,10 +74,6 @@ BOOL SampleApp::InitInstance()
 	pFrame->LoadFrame(IDR_MAINFRAME,
 		WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, NULL,
 		NULL);
-
-
-
-
 
 	// The one and only window has been initialized, so show and update it
 	pFrame->ShowWindow(SW_SHOW);
@@ -99,7 +89,6 @@ int SampleApp::ExitInstance()
 
 // SampleApp message handlers
 
-
 // CAboutDlg dialog used for App About
 
 class CAboutDlg : public CDialogEx
@@ -109,18 +98,22 @@ public:
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_ABOUTBOX };
+	enum
+	{
+		IDD = IDD_ABOUTBOX
+	};
 #endif
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	virtual void DoDataExchange(CDataExchange* pDX); // DDX/DDV support
 
-// Implementation
+	// Implementation
 protected:
 	DECLARE_MESSAGE_MAP()
 };
 
-CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)
+CAboutDlg::CAboutDlg()
+	: CDialogEx(IDD_ABOUTBOX)
 {
 }
 
@@ -140,6 +133,3 @@ void SampleApp::OnAppAbout()
 }
 
 // SampleApp message handlers
-
-
-

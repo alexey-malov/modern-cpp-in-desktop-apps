@@ -7,24 +7,23 @@
 
 class MainFrame : public CFrameWnd
 {
-	
+
 public:
 	MainFrame();
-protected: 
+
+protected:
 	DECLARE_DYNAMIC(MainFrame)
 
-// Attributes
+	// Attributes
 public:
-
-// Operations
+	// Operations
 public:
-
-// Overrides
+	// Overrides
 public:
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 	virtual BOOL OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERINFO* pHandlerInfo);
 
-// Implementation
+	// Implementation
 public:
 	virtual ~MainFrame();
 #ifdef _DEBUG
@@ -32,14 +31,11 @@ public:
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
-	ChildView    m_wndView;
+	ChildView m_wndView;
 
-// Generated message map functions
+	// Generated message map functions
 protected:
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-	afx_msg void OnSetFocus(CWnd *pOldWnd);
+	afx_msg void OnSetFocus(CWnd* pOldWnd);
 	DECLARE_MESSAGE_MAP()
-
 };
-
-
