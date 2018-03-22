@@ -164,16 +164,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\catch\catch.hpp" />
-    <ClInclude Include="FileReference.h" />
+    <ClInclude Include="FileRef.h" />
     <ClInclude Include="FileStorage.h" />
     <ClInclude Include="FileEntity.h" />
+    <ClInclude Include="FileStorage_fwd.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="FolderEntity.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FileReference.cpp" />
+    <ClCompile Include="FileRef.cpp" />
     <ClCompile Include="FileStorage.cpp" />
     <ClCompile Include="FileEntity.cpp" />
     <ClCompile Include="FolderEntity.cpp" />

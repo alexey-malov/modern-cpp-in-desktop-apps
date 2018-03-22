@@ -33,14 +33,17 @@
     <ClInclude Include="FileEntity.h">
       <Filter>storage</Filter>
     </ClInclude>
-    <ClInclude Include="FileSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileReference.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FolderEntity.h">
-      <Filter>Header Files</Filter>
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRef.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStorage_fwd.h">
+      <Filter>storage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -56,11 +59,11 @@
     <ClCompile Include="FileEntity.cpp">
       <Filter>storage</Filter>
     </ClCompile>
-    <ClCompile Include="FileReference.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FolderEntity.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="FileRef.cpp">
+      <Filter>storage</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

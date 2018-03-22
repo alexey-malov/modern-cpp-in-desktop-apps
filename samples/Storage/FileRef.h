@@ -1,14 +1,15 @@
 #pragma once
 
 #include "FileSystem.h"
+#include "FileStorage_fwd.h"
 
 class FileEntity;
 class FolderEntity;
 
-class FileReference final
+class FileRef final
 {
 public:
-	FileReference(const std::shared_ptr<FileEntity>& file, const std::shared_ptr<FolderEntity>& folder);
+	FileRef(const std::shared_ptr<FileEntity>& file, const std::shared_ptr<FolderEntity>& folder);
 
 	const fs::path& GetPath() const noexcept;
 	void KeepAlive() noexcept;
